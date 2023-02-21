@@ -1,0 +1,78 @@
+.container {
+    max-width: 1415px;
+    margin: 0 auto;
+}
+.header__nav { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1205px;
+    gap: 16px;
+    margin: 0 auto;
+}
+.nav__link {
+    background: none;
+    box-sizing: border-box;
+    border: 3px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 18px 57px 18px 20px;
+    font-family: 'raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+    color: #000000;
+}
+.blue__link {
+    background-color: var(--col-blue);
+    color: white;
+}
+.green__link {
+    background-color: var(--col-green);
+}
+.catalog__cards  {
+    display: grid;
+    grid-template-columns: repeat(3,424px);
+    gap: 65px;
+    width: 100%;
+    margin: 154px 67px 109px 125px;
+}
+.cards__item {
+    position: relative;
+
+} 
+.card__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    margin: 0;
+    padding: 4px 11px;
+    background-color: #FFFFFF;
+    border-radius:8px;
+}
+.card__btn {
+    padding: 7px 15px;
+    font-weight: 500;
+    font-size: 24.576px;
+    line-height: 29px;
+    display: block;
+    max-width: max-content;
+    text-transform: lowercase;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    right: 6px;
+    bottom: 7px;
+    position: absolute;
+}
+.card__image {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+}
