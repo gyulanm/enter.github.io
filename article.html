@@ -8,38 +8,39 @@
     <title>programm</title>
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="wrapper">
             <div class="services">
-                <img src="img/ENTER.svg" alt="">
+                <a class="btn_enter" href="./index.html"> Enter</a>
                 <form action="">
                     <input class="services__search" type="text" name="search" placeholder="поиск">
                 </form>
-                <img src="img/account.svg" alt="">
+                <a href="./account.html"><img src="img/account.svg" alt=""></a>
             </div>
         </div>
     </header>
     <section class="banner">
         <div class="container">
-            <div class="banner__wrapper">
-                <div class="banner__breadcrumbs breadcrumbs">
-                    <a class="breadcrumbs__item" href="./index.html">О нас</a>
-                    <a class="breadcrumbs__item" href="#">Математика</a>
-                    <a class="breadcrumbs__item" href="#">Математика и компьютерные науки</a>
+            <div class="banner__wrapper banner__wrapper--article">
+                <div class="banner__text-wrapper">
+                    <a class="banner__subtitle" href="./programm.html"> Программа </a>
+                    <h1 class="banner__title"> Математика и&nbsp;компьютерные науки</h1>
                 </div>
-                <a class="banner__subtitle" href="./programm.html"> Программа </a>
-                <h1 class="banner__title"> Математика и&nbsp;компьютерные науки</h1>
-                <button class="btn__save"><img src="img/articles/btnsave.svg" alt=""></button>
+                <button class="btn__save"><img src="./img/articles/btnsave.png" alt=""></button>
             </div>
         </div>
     </section>
     <section class="promotion bg--blue">
         <div class="container">
             <h2 class="promotion__title">Подробнее</h2>
-            <p class="promotion__description">Подготовка специалистов в области математики
-                и компьютерных наук, владеющих языками программирования для разработки операционных систем.</p>
+            <p class="promotion__description">Подготовка специалистов в области математики<br>
+                и компьютерных наук, владеющих языками<br>программирования для разработки<br>операционных систем.</p>
         </div>
     </section>
     <section class="information">
@@ -47,9 +48,9 @@
             <h2 class="information__title">Поступление</h2>
             <div class="row">
                 <div class="information__card card card--budget">
-                    <div class="card__img bg--blue">%</div> 
+                    <div class="card__img bg--blue">%</div>
                     <h3 class="card__title">Бюджет</h3>
-                    <div class="card__divider "></div>
+                    <div class="card__divider card__divider--blue"></div>
                     <ol class="card__list">
                         <li class="card__list-item list-item row">
                             <div class="row">
@@ -77,7 +78,7 @@
                 <div class="information__card card card--paid">
                     <div class="card__img bg--green">$</div>
                     <h3 class="card__title">Платно</h3>
-                    <div class="card__divider"></div>
+                    <div class="card__divider card__divider--green"></div>
                     <ol class="card__list">
                         <li class="card__list-item list-item row">
                             <div class="row">
@@ -128,14 +129,22 @@
                     </p>
                 </div>
             </div>
-            <video class="univesity__video video">
-            </video>
+            <div class="video-wrapper">
+                <video id="video" class="univesity__video video">
+                    <source src="./video/Факультет математики.mp4" type="video/mp4">
+                </video>
+                <button id="video-btn" class="video-btn">
+                    <img src="./img/play.svg" alt="">
+                </button>
+            </div>
         </div>
     </section>
     <section class="comments">
         <div class="container">
             <h2 class="comments__title">Комментарии</h2>
-            <div class="commnets__divider divider divider--narrow"></div>
+            <div class="comments__divider divider">
+                <div class="divider--narrow"></div>
+            </div>
             <div class="comments__row">
                 <div class="comments__card">
                     <img class="comments__img " src="./img/articles/cooment1.png" alt="">
@@ -154,7 +163,7 @@
         </div>
     </section>
     <!-- исправить footer -->
-    <footer> 
+    <footer>
         <div class="wrapper">
             <div class="footer__flex">
                 <div class="follow">
@@ -164,32 +173,32 @@
                         <button class="follow__btn" type="submit">подписаться</button>
                     </form>
                 </div>
-            <div class="footer__info">
-                <ul class="footer__menu">
-                    <li><a href="">Помощь</a></li>
-                    <li><a href="">Обратная связь</a></li>
-                    <li><a href="">Лицензия</a></li>
-                    <li><a href="">Политика<br> 
-                        конфиденциальности</a></li>
-                </ul>
-            </div>
-            <div class="footer__info">
-                <ul class="footer__menu">
-                    <li><a href="">СЕРВИС</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Вузам</a></li>
-                    <li><a href="">Рекламодателям</a></li>
-                </ul>
-            </div>
+                <div class="footer__info">
+                    <ul class="footer__menu">
+                        <li><a href="">Помощь</a></li>
+                        <li><a href="">Обратная связь</a></li>
+                        <li><a href="">Лицензия</a></li>
+                        <li><a href="">Политика<br>
+                                конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <ul class="footer__menu">
+                        <li><a href="">СЕРВИС</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Вузам</a></li>
+                        <li><a href="">Рекламодателям</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    <div class="footer__line">
-    </div>
-    <div class="wrapper">
-        <p class="copyright">© 2016 - 2023 ООО ENTER</p>
-    </div>
+        <div class="footer__line">
+        </div>
+        <div class="wrapper">
+            <p class="copyright">© 2016 - 2023 ООО ENTER</p>
+        </div>
     </footer>
-        <!-- исправленный footer -->
+    <!-- исправленный footer -->
     <!-- <footer>
         <div class="container">
             <div class="row">
@@ -225,6 +234,8 @@
         <p class="copyright">© 2016 - 2023 ООО ENTER</p>
     </footer> -->
     <script src="script.js">
+    </script>
+    <script src="video.js">
     </script>
 </body>
 
