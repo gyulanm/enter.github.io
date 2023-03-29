@@ -243,11 +243,11 @@ body {
 }
 
 .card--Baumna {
-    background-image: url("../../enter.github.io/img/articles/baumna.jpg");
+    background-image: url("./enter.github.io/img/articles/baumna.jpg");
 }
 
 .card--MIPT {
-    background-image: url("../../enter.github.io/img/articles/mipt.jpg");
+    background-image: url("../enter.github.io/img/articles/mipt.jpg");
 }
 
 .card__chip {
